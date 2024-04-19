@@ -1,0 +1,30 @@
+{
+  "name": "chatbot",
+  "version": "1.0.0",
+  "description": "An AI chatbot using OpenAI API. Similar to chatgpt",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server":"nodemon server.js",
+    "start":"node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anant-bhardwj/chatbot.git"
+  },
+  "author": "pizza-salad",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anant-bhardwj/chatbot/issues"
+  },
+  "homepage": "https://github.com/anant-bhardwj/chatbot#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.3.2",
+    "morgan": "^1.10.0"
+  }
+}
