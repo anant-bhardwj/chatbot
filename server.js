@@ -6,6 +6,9 @@ const colors = require("colors");
 const dotenv = require("dotenv");
 const connectDB = require("./config/db");
 
+//routes paths
+const authRoutes = require("./routes/authRoutes");
+
 //dotenv
 dotenv.config();
 
@@ -22,6 +25,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(morgan("dev"));
 
 const PORT = process.eventNames.PORT || 8080;
+
+//API ROUTES
+app.user("api/v1/auth", authRoutes);
 
 //listen to the server
 app.listen(8080, () => {
